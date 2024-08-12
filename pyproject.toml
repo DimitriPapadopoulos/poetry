@@ -200,7 +200,10 @@ markers = [
 ]
 log_cli_level = "INFO"
 xfail_strict = true
-
+filterwarnings = [
+    "error",
+    "ignore::DeprecationWarning:httpretty.*:",
+]
 
 [tool.coverage.report]
 exclude_also = [
